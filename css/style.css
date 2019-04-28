@@ -14,3 +14,19 @@ span {
 	padding: 0 20px;
 	border-right: 1px solid red;
 }
+
+/* button */
+#toggle-kolor {
+	padding: 1rem;
+	border: 5px solid aqua;
+}
+
+/* klasa dodana po kliklnieciu */
+.btn-active {
+	background-color: aquamarine;
+	color: black;
+}
+
+#parSecond {
+	border: 2px solid saddlebrown;
+}
