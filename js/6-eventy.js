@@ -52,3 +52,23 @@ const zablokuj = (x) => {
 }
 
 link[2].addEventListener('click', zablokuj )
+
+
+let parWParSecond = document.getElementById('parWParSecond') 
+
+const klikDiv = (e) => {
+    console.log("kliknieto w div")
+}
+
+const klikParagraf = (e) => {
+    // akcje zaczną się od tego
+    e.stopPropagation();
+    console.log('Kliknięto paragraf')
+}
+
+
+// paragraf wykona się pierwszy - akcje zaczynają się od najgłębszego do najwyższyego
+// dodatkowo obydwa event listinery się uruchomią
+    // by to zatrzymać robimy e.stopPropagation()
+parSecond.addEventListener("click", klikDiv);
+parWParSecond.addEventListener("click", klikParagraf);
